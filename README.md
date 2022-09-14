@@ -15,6 +15,6 @@ BigQuery ML functionality is available by using:
 - The BigQuery REST API
 - An external tool such as a Jupyter notebook or business intelligence platform
 
-# My YouTube Videos BigQuery
+# My YouTube Videos about BigQuery
 
 - [Regression Analysis with BigQuery](https://youtu.be/77RJwtjkIA0)
