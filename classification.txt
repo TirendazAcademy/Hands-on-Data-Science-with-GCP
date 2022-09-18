@@ -1,0 +1,167 @@
+### Classification with BigQuery in 6 Steps
+
+# In this tutorial, I'll show you how to build a binary logistic regression model in BigQuery ML.
+
+# I'll use US Census Dataset and predict the income range of respondents in this dataset.
+
+# The table of contents
+
+# Here are 6 steps to solve classification problem.
+
+1. Create your dataset
+2. Examine your data
+3. Select your training data
+4. Create the model
+5. Evaluate the model
+6. Predict income bracket
+
+Let's dive in!
+
+--- 1. Create your dataset
+
+- Go to the BigQuery page
+- Pin bigquery-public-data
+- Create Dataset ID
+- Enter a name let's say classification
+- You can see this name under your project 
+
+--- 2. Examine your data
+
+# Look at the dataset
+
+--- 3. Select your training data
+
+# Open a new Query editor
+
+# Create the datasets by selecting some variables.
+
+CREATE OR REPLACE VIEW
+  `classification.input_view` AS
+
+# Type the columns you want to select
+
+SELECT
+  age,
+  workclass,
+  marital_status,
+  education_num,
+  occupation,
+  hours_per_week,
+  income_bracket,
+
+# Splitting the dataset
+# First let's create the train set.
+
+  CASE
+    WHEN MOD(functional_weight, 10) < 8 THEN 'training'
+	
+# Let's create the evaluation set.
+
+	WHEN MOD(functional_weight, 10) = 8 THEN 'evaluation'
+	
+# Let's create the prediction set.
+
+	WHEN MOD(functional_weight, 10) = 9 THEN 'prediction'
+	
+# Let's set dataset. 
+
+  END AS dataframe
+	
+# Let's type the dataset. 
+
+FROM
+  `bigquery-public-data.ml_datasets.census_adult_income`
+  
+# Click Run. 
+# The query creates a view containing these columns
+# Click the view
+
+--- 4. Building a logistic regression model
+
+# Write the name of the model you want
+
+CREATE OR REPLACE MODEL
+  `classification.census_model`
+
+# Type the logistic regression 
+# The 'auto_class_weights=TRUE' option balances the class labels.
+# Specify the label column.
+
+OPTIONS
+  ( model_type='LOGISTIC_REG',
+    auto_class_weights=TRUE,
+    input_label_cols=['income_bracket']
+  ) AS
+
+# Query only our view
+
+SELECT
+  * EXCEPT(dataframe)
+FROM
+  `classification.input_view`
+
+# Use only train set to build the model
+
+WHERE
+  dataframe = 'training'
+
+# Click Run.
+# You can see the census_model
+
+--- 5. Evaluating the model
+
+SELECT
+  *
+FROM
+
+# Evaluate the performance of the model using the ML.EVALUATE function
+
+  ML.EVALUATE (MODEL `classification.census_model`,
+    (
+    SELECT
+      *
+    FROM
+      `classification.input_view`
+
+# Use evaluation dataset    
+		
+	WHERE
+	    dataframe = 'evaluation'
+    )
+  )
+  
+# Click RUN
+
+# Click the Results tab below the query text area.
+
+# You can also use Google Cloud console to view the evaluation metrics.
+
+--- 6. Predicting income bracket
+
+SELECT
+  *
+FROM
+
+# To predict income bracket, use the ML.PREDICT function
+
+  ML.PREDICT (MODEL `classification.census_model`,
+    (
+    SELECT
+      *
+    FROM
+      `classification.input_view`
+
+# Use evaluation dataset        
+
+	WHERE
+      dataframe = 'prediction'
+    )
+  )
+
+# Click Run
+
+# When completing the query, click the Results tab below the query text area.
+
+--- Clean up
+
+# Delete your dataset to avoid incurring charges
