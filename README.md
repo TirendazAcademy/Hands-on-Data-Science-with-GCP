@@ -37,6 +37,10 @@ Dataflow is a fully managed service for executing data processing pipelines writ
 
 Unlike with Cloud Dataproc, you don’t need to spin up a cluster to perform data processing. Instead, you simply submit the code and it will get executed and autoscaled to as many machines as needed to accomplish the task effectively. 
 
+## 🔥 Cloud SQL
+
+Cloud SQL is a fully-managed database service that makes it easy to set up, maintain, manage, and administer your relational PostgreSQL and MySQL databases in the cloud. 
+
 ## ▶ Youtube videos about GCP
 
 - [Regression Analysis with BigQuery](https://youtu.be/77RJwtjkIA0)
