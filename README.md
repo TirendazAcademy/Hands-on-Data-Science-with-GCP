@@ -31,11 +31,16 @@ Dataproc automation enables you to create clusters quickly, manage them easily, 
 - Managed - You can easily interact with clusters and Spark or Hadoop jobs through the Google Cloud console, the Cloud SDK, or the Dataproc REST API.
 - Simple and familiar
 
+## 🔥 What is Dataflow?
 
-## ▶ My youtube videos about GCP
+Dataflow is a fully managed service for executing data processing pipelines written using Apache Beam. Dataflow provides serverless, autoscaling service for programmatic data pipelines. 
+
+Unlike with Cloud Dataproc, you don’t need to spin up a cluster to perform data processing. Instead, you simply submit the code and it will get executed and autoscaled to as many machines as needed to accomplish the task effectively. 
+
+## ▶ Youtube videos about GCP
 
 - [Regression Analysis with BigQuery](https://youtu.be/77RJwtjkIA0)
 
-## ✍ My blog posts about GCP
+## ✍ Blog posts about GCP
 
 - [Hands-on Regression Analysis with BigQuery](https://medium.com/geekculture/hands-on-regression-analysis-with-bigquery-7925dca179ff?source=your_stories_page-------------------------------------)
