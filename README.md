@@ -1,4 +1,4 @@
-# ✨ Welcome to Data Science with Google Cloud Platform 😀
+# ✨ Data Science with Google Cloud Platform 😀
 
 ![image](https://user-images.githubusercontent.com/55794407/190195813-00af9b7d-028d-4a40-a804-d32ff0811e5a.png)
 
