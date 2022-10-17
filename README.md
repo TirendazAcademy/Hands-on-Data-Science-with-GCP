@@ -41,6 +41,18 @@ Unlike with Cloud Dataproc, you don’t need to spin up a cluster to perform dat
 
 Cloud SQL is a fully-managed database service that makes it easy to set up, maintain, manage, and administer your relational PostgreSQL and MySQL databases in the cloud. 
 
+## 🔥 Cloud Composer
+
+Cloud Composer is a fully managed workflow orchestration service, enabling you to create, schedule, monitor, and manage workflows that span across clouds and on-premises data centers.
+
+*A DAG (Directed Acyclic Graph)* is the core concept of Airflow, collecting Tasks together, organized with dependencies and relationships to say how they should run.
+
+![](https://airflow.apache.org/docs/apache-airflow/stable/_images/basic-dag.png)
+
+A *Task* is a unit of work within a DAG. Graphically, it’s a node in the DAG. Note that DAGs are nothing without Tasks to run. 
+
+![](https://cloud.google.com/static/composer/docs/images/overview-dag-and-tasks.svg)
+
 ## ▶ Youtube videos about GCP
 
 - [Regression Analysis with BigQuery](https://youtu.be/77RJwtjkIA0)
