@@ -31,11 +31,11 @@ Dataproc automation enables you to create clusters quickly, manage them easily, 
 - Managed - You can easily interact with clusters and Spark or Hadoop jobs through the Google Cloud console, the Cloud SDK, or the Dataproc REST API.
 - Simple and familiar
 
-
-
 ## 🔥 What is Dataflow?
 
-Dataflow is a fully managed service for executing data processing pipelines written using Apache Beam. Dataflow provides serverless, autoscaling service for programmatic data pipelines. 
+Dataflow is a data processing engine that can handle both batch and streaming data pipelines. It is a fully managed service for executing data processing pipelines written using Apache Beam. Apache Beam is an open source tool to define data pipelines. It runs the data pipeline using Dataflow.
+
+Dataflow is similar to Spark that both technologies can process big data in parallel and can handle almost any kind of data or file. But in terms of underlying technologies, they are different. The main difference is the serverless nature of Dataflow. Using Dataflow, we don't need to set up any cluster. We just submit jobs to Dataflow, and the data pipeline will run automatically on the cloud. We just submit jobs to Dataflow, and the data pipeline will run automatically on the cloud. 
 
 Unlike with Cloud Dataproc, you don’t need to spin up a cluster to perform data processing. Instead, you simply submit the code and it will get executed and autoscaled to as many machines as needed to accomplish the task effectively. 
 
@@ -61,7 +61,26 @@ A *Task* is a unit of work within a DAG. Graphically, it’s a node in the DAG. 
 ## 🔥 What is Pub/Sub?
 
 Pub/Sub is a messaging system that receives messages from multiple systems and distribute them to multiple systems. Pub/Sub is used for streaming analytics and data integration pipelines to ingest and distribute data. Pub/Sub helps you create systems of event producers and consumers, called publishers and subscribers. Publishers communicate with subscribers asynchronously by broadcasting events, rather than by synchronous remote procedure calls. The following diagram illustrates how a message passes from a publisher to a subscriber.
+
 ![](https://cloud.google.com/static/pubsub/images/pub_sub_flow.svg)
+
+Let's take a look at the main components of Pub/Sub?
+
+### 🔶Publisher
+
+The publisher is an entry point of Pub/Sub that uses the publisher to control incoming messages. 
+
+### 🔶 Topic
+
+The topic is a central point of Pub/Sub. Pub/Sub stores messages in its internal storage. You can think of topics as the sets of messages that stores in Pub/Sub. Note that Pub/Sub messages are similar, with rows or records in the tables.
+
+### 🔶 Subscription
+
+Each topic can have one or many subscriptions. Subscriptions are entities that have an interest in receiving messages from the topic. For example, for one topic that has two subscriptions, the two subscriptions will get identical messages from the topic. 
+
+### 🔶 Subscriber
+
+A subscriber is different from a subscription. Each subscription can have one or many subscribers. The idea of having multiple subscribers in a subscription is to split the loads. For example, for one subscription that has two subscribers, the two subscribers will get partial messages from the subscription.
 
 ## ▶ Youtube videos about GCP
 
