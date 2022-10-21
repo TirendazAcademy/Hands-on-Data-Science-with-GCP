@@ -23,7 +23,7 @@ Dataproc allows you to manage Spark and Hadoop services that let you take advant
 
 Dataproc automation enables you to create clusters quickly, manage them easily, and save money by turning clusters off when you don't need them. You can focus on your jobs and data with less time and money spent on administration.
 
-### Here are some advantages of Dataproc:
+### 🔶 Here are some advantages of Dataproc:
 
 - Low cost 
 - Super fast 
