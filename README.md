@@ -31,17 +31,22 @@ Dataproc automation enables you to create clusters quickly, manage them easily, 
 - Managed - You can easily interact with clusters and Spark or Hadoop jobs through the Google Cloud console, the Cloud SDK, or the Dataproc REST API.
 - Simple and familiar
 
+
+
 ## 🔥 What is Dataflow?
 
 Dataflow is a fully managed service for executing data processing pipelines written using Apache Beam. Dataflow provides serverless, autoscaling service for programmatic data pipelines. 
 
 Unlike with Cloud Dataproc, you don’t need to spin up a cluster to perform data processing. Instead, you simply submit the code and it will get executed and autoscaled to as many machines as needed to accomplish the task effectively. 
 
-## 🔥 Cloud SQL
+![](https://storage.googleapis.com/gweb-cloudblog-publish/images/Dataflow_v6-28-21.max-1600x1600.jpeg)
+
+
+## 🔥 What is Cloud SQL?
 
 Cloud SQL is a fully-managed database service that makes it easy to set up, maintain, manage, and administer your relational PostgreSQL and MySQL databases in the cloud. 
 
-## 🔥 Cloud Composer
+## 🔥 What is Cloud Composer?
 
 Cloud Composer is a fully managed workflow orchestration service, enabling you to create, schedule, monitor, and manage workflows that span across clouds and on-premises data centers.
 
@@ -52,6 +57,11 @@ Cloud Composer is a fully managed workflow orchestration service, enabling you t
 A *Task* is a unit of work within a DAG. Graphically, it’s a node in the DAG. Note that DAGs are nothing without Tasks to run. 
 
 ![](https://cloud.google.com/static/composer/docs/images/overview-dag-and-tasks.svg)
+
+## 🔥 What is Pub/Sub?
+
+Pub/Sub is a messaging system that receives messages from multiple systems and distribute them to multiple systems. Pub/Sub is used for streaming analytics and data integration pipelines to ingest and distribute data. Pub/Sub helps you create systems of event producers and consumers, called publishers and subscribers. Publishers communicate with subscribers asynchronously by broadcasting events, rather than by synchronous remote procedure calls. The following diagram illustrates how a message passes from a publisher to a subscriber.
+![](https://cloud.google.com/static/pubsub/images/pub_sub_flow.svg)
 
 ## ▶ Youtube videos about GCP
 
