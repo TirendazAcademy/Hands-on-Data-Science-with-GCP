@@ -82,6 +82,15 @@ Each topic can have one or many subscriptions. Subscriptions are entities that h
 
 A subscriber is different from a subscription. Each subscription can have one or many subscribers. The idea of having multiple subscribers in a subscription is to split the loads. For example, for one subscription that has two subscribers, the two subscribers will get partial messages from the subscription.
 
+## 🔥 Data Studio
+
+Data Studio is a fully managed tool on the cloud. This means that you can literally start developing your report, visualizing charts, sharing the report, and more without leaving your browser. 
+
+## 🔥 Looker Studio
+
+Looker Studio is a free, self-service business intelligence platform that lets users build and consume data visualizations, dashboards, and reports. With Looker Studio, you can connect to your data, create visualizations, and share your insights with others.
+
+
 ## ▶ Youtube videos about GCP
 
 - [Regression Analysis with BigQuery](https://youtu.be/77RJwtjkIA0)
