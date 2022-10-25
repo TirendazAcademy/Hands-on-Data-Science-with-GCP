@@ -82,6 +82,12 @@ Each topic can have one or many subscriptions. Subscriptions are entities that h
 
 A subscriber is different from a subscription. Each subscription can have one or many subscribers. The idea of having multiple subscribers in a subscription is to split the loads. For example, for one subscription that has two subscribers, the two subscribers will get partial messages from the subscription.
 
+## 🔥Vertex AI
+
+Vertex AI is a machine learning platform that allows you to manage all of Google’s cloud services in one place to deploy and maintain AI models. You can build, deploy, and scale machine learning (ML) models faster, with fully managed ML tools for any use case with this platform.
+
+Vertex AI Pipeline is a tool for orchestrating ML workflows that uses Kubeflow Pipeline under the hood. Similar to the relationship between Airflow and Cloud Composer or Hadoop and DataProc, to understand Vertex AI Pipeline, we need to be familiar with Kubeflow Pipelines.
+
 ## 🔥 Data Studio
 
 Data Studio is a fully managed tool on the cloud. This means that you can literally start developing your report, visualizing charts, sharing the report, and more without leaving your browser. 
