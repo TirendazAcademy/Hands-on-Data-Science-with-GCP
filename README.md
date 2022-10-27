@@ -100,9 +100,9 @@ Looker Studio is a free, self-service business intelligence platform that lets u
 
 ### 🔶 Machine Learning Engineering
 
-#### ▶ Courses
+####  Courses
 
-✨ [Preparing for Google Cloud Machine Learning Engineer Professional Certificate](https://www.coursera.org/professional-certificates/preparing-for-google-cloud-machine-learning-engineer-professional-certificate?) course offered by Google.
+✨ [Preparing for Google Cloud Machine Learning Engineer Professional Certificate](https://www.coursera.org/professional-certificates/preparing-for-google-cloud-machine-learning-engineer-professional-certificate?)
 
 ✨ [Production Machine Learning Systems](https://www.coursera.org/learn/gcp-production-ml-systems?specialization=preparing-for-google-cloud-machine-learning-engineer-professional-certificate)
 
