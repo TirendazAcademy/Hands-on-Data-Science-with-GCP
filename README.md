@@ -96,6 +96,16 @@ Data Studio is a fully managed tool on the cloud. This means that you can litera
 
 Looker Studio is a free, self-service business intelligence platform that lets users build and consume data visualizations, dashboards, and reports. With Looker Studio, you can connect to your data, create visualizations, and share your insights with others.
 
+## 🔥 Preparing GCP Certificates
+
+### 🔶 Machine Learning Engineering
+
+✨ [How to prepare for the GCP Professional Machine Learning Engineer exam](https://towardsdatascience.com/how-to-prepare-for-the-gcp-professional-machine-learning-engineer-exam-b1c59967355f)
+
+✨ [Preparing for Google Cloud Machine Learning Engineer Professional Certificate](https://www.coursera.org/professional-certificates/preparing-for-google-cloud-machine-learning-engineer-professional-certificate?) course offered by Google.
+
+✨ [https://www.coursera.org/learn/gcp-big-data-ml-fundamentals?specialization=preparing-for-google-cloud-machine-learning-engineer-professional-certificate]()
+
 
 ## ▶ Youtube videos about GCP
 
